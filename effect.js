@@ -138,13 +138,22 @@ $('document').ready(function(){
 		});
 	});
 
-	$('#thoi_nen').click(function(){
+	
+       $('#thoi_nen').click(function(){
+		$(this).fadeOut('slow');
+		$('.fuego').fadeOut('fast').promise().done(function(){
+			$('#wish_message').fadeIn('slow');
+
+	         });
+	});
+
+	/* $('#thoi_nen').click(function(){
 		$('.fuego').hide();
 		$('.cake').fadeIn('slow');
 		$(this).fadeOut('slow').delay(3000).promise().done(function(){
 			$('#wish_message').fadeIn('slow');
 		});
-	});
+	}); */
 
 		
 	$('#wish_message').click(function(){
