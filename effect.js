@@ -141,7 +141,7 @@ $('document').ready(function(){
 	
        $('#thoi_nen').click(function(){
 		$(this).fadeOut('slow');
-		$('.fuego').fadeOut('fast').promise().done(function(){
+		$('.fuego').fadeOut('fast').delay(4000).promise().done(function(){
 			$('#wish_message').fadeIn('slow');
 
 	         });
