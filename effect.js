@@ -134,6 +134,13 @@ $('document').ready(function(){
 	$('#light_candle').click(function(){
 		$('.fuego').fadeIn('slow');
 		$(this).fadeOut('slow').promise().done(function(){
+			$('#thoi_nen').fadeIn('slow');
+		});
+	});
+
+	$('#thoi_nen').click(function(){
+		$('.cake').fadeIn('slow');
+		$(this).fadeOut('slow').delay(3000).promise().done(function(){
 			$('#wish_message').fadeIn('slow');
 		});
 	});
