@@ -150,7 +150,8 @@ $('document').ready(function(){
 	
 	$('#cmsn_dieuuoc').click(function(){   
 		$('.dieu-uoc-beiu').fadeIn('slow');
-		$(this).fadeOut('fast').delay(4000).promise().done(function(){
+		$('#cmsn_dieuuoc').fadeOut('fast');
+		$('.cake').fadeOut('fast').delay(4000).promise().done(function(){
 		$('#wish_message').fadeIn('slow');
 
 	         });
