@@ -1341,16 +1341,9 @@ input[type=submit]:hover {
   margin-top: 40px;
   display: block;
 }
-
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
-
 .col-75 {
   float: left;
-  width: 75%;
+  width: 100%;
   margin-top: 6px;
 }
 
