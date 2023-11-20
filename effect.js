@@ -216,29 +216,5 @@ $('document').ready(function(){
 });
 
 // Form dieu uoc
-function sendForm() {
-    // đem tất cả dữ liệu trong form id là 'google-form' gom thành biến data
-    let data = $('#google-form').serialize();
-
-    $.ajax({ //Sử dụng Ajax gửi dữ liệu đi
-        url: 'https://script.google.com/macros/s/AKfycbxaZnhx7MVfN-D7bfPKX7TATSfwiAxI6iZ2LIBjhPRWHG1MuyR2FiMm1y71LaaRM79o/exec',
-        method: 'GET',
-        dataType: 'json',
-        data: data,
-        success: function(responseData, textStatus, jqXHR) {
-        },
-        error: function(jqXHR, textStatus, errorThrown) {
-            console.log(errorThrown);
-        }
-    });
-
-    window.jQuery(this).trigger('reset');
-    alert('Ngần đã gửi thành công điều ước !');
-
-    return true;
-};
-
-
-
 
 //alert('hello');
