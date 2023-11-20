@@ -148,8 +148,8 @@ $('document').ready(function(){
 	         });
 	});
 	
-	$('#cmsn_dieuuoc').click(function(){
-		$(this).fadeOut('slow');
+	$('#cmsn_dieuuoc').click(function(){   
+		$('.dieu-uoc-beiu').fadeIn('slow');
 		$('.cake').fadeOut('fast').delay(4000).promise().done(function(){
 			$('#wish_message').fadeIn('slow');
 
