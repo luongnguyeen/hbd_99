@@ -1,6 +1,6 @@
 $(window).load(function(){
 	$('.loading').fadeOut('fast');
-	$('.dieu-uoc-beiu').fadeOut('fast');
+	/*$('.dieu-uoc-beiu').fadeOut('fast');*/
 	$('.container').fadeIn('fast');
 });
 $('document').ready(function(){
